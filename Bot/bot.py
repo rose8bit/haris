@@ -8,6 +8,8 @@ import discord
 from discord.ext import commands
 import os
 
+bot = commands.Bot(command_prefix = config.pre, descprption = config.des)
+
 #config.py setup
 if not os.path.isfile("config.py"):
 	print("config.py not found")
@@ -23,7 +25,5 @@ async def on_ready():
 	
 	#set "playing" status
 	await bot.change_presence(activity = discord.Game(name = "beep boop"))
-
-bot = commands.Bot(command_prefix = config.pre, descprption = config.des)
 
 bot.run(config.bot_token)
