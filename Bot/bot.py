@@ -15,7 +15,7 @@ else:
 	print("config.py found! importing...")
 	import config
 
-bot = commands.Bot(command_prefix = config.pre, descprption = config.des)	
+bot = commands.Bot(command_prefix = config.pre, descpription = config.des)	
 	
 #bot startup
 @bot.event
