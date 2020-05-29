@@ -1,6 +1,6 @@
 #config.py
 
-bot_token = 'Rqik_TVZWQ2AHXF9jcEvzQBa2NXqBRKD'
+bot_token = 'NzE1NzQ4Mzg1ODMwODYyODY5.XtEIDA.3dl-I9kFdk3Xnt9lEvbq0PdgyGo'
 
 #extensions
 
