@@ -6,6 +6,7 @@ Created: May 29, 2020
 #importing modules...
 import discord
 from discord.ext import commands
+import os
 
 #config.py setup
 if not os.path.isfile("config.py"):
