@@ -8,14 +8,14 @@ import discord
 from discord.ext import commands
 import os
 
-bot = commands.Bot(command_prefix = config.pre, descprption = config.des)
-
 #config.py setup
 if not os.path.isfile("config.py"):
 	print("config.py not found")
 else:
 	print("config.py found! importing...")
 	import config
+
+bot = commands.Bot(command_prefix = config.pre, descprption = config.des)	
 	
 #bot startup
 @bot.event
