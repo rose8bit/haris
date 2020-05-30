@@ -15,7 +15,7 @@ from discord.ext import commands
 import os
 
 bot = commands.Bot(
-	command_prefix = "$", 
+	command_prefix = "!", 
 	descpription = "I look for food deals on the internet.",
 	owner_id=461656626567577630,
 	case_insensitive=True)
