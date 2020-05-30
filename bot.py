@@ -16,7 +16,7 @@ import os
 
 bot = commands.Bot(
 	command_prefix = "!", 
-	descpription = "I look for food deals on the internet.",
+	description = "A bot to look for food deals.",
 	owner_id=461656626567577630,
 	case_insensitive=True)
 
