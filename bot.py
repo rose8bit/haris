@@ -34,13 +34,18 @@ async def on_ready():
 	print("=============")
 	print("haris is ready!")
 	
-	#load cog files
-	for cog in cogs:
-		bot.load_extension(cog)
-		print(f"Loaded cog '{cog}'")
-	return
-	
 	#set "playing" status
 	await bot.change_presence(activity = discord.Game(name = "beep boop"))
+	
+#Load cogs
+if __name__ == "__main__":		
+	#load cog files
+	for cog in cogs:
+		try:
+			bot.load_extension(cog)
+			print(f"Loaded cog '{cog}'")
+		except Exception as err:
+			exc = '{}: {}'.format(type(err).__name__, err)
+			print('Failed to load cog {}\n{}'.format(cog, exc))	
 
 bot.run(BOT_TOKEN)
