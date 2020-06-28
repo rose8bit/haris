@@ -26,7 +26,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 cogs ------
 greet.py - Greet new members.
 """
-cogs = ['cogs.greet']
+cogs = ['cogs.greet', 'cogs.streamer_role']
 	
 #bot startup
 @bot.event
