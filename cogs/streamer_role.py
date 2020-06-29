@@ -25,7 +25,7 @@ class Streamer_role(commands.Cog):
 		else:
 			print('{} wasn\'t playing anything.'.format(before.display_name))
 		if after.activity is not None:
-			print('{} after activity type: {}\n'.format(after.display_name, str(before.activities)))
+			print('{} after activity type: {}\n'.format(after.display_name, str(after.activities)))
 		else:
 			print('{} has stopped playing.'.format(after.display_name))
 			      
