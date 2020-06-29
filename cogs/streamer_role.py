@@ -20,7 +20,7 @@ class Streamer_role(commands.Cog):
 		
 	@commands.Cog.listener()
 	async def on_member_update(self, before, after):
-		print('{} before activity type: {} \n'.format(before.display_name, before.activity.type.name))
+		print('{} before activity type: {} \n'.format(before.display_name, before.streaming))
 		print('{} after activity type: {} \n'.format(after.display_name, after.activity.type.name))
 def setup(bot):
 	bot.add_cog(Streamer_role(bot))
