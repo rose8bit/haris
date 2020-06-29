@@ -23,4 +23,4 @@ class Streamer_role(commands.Cog):
 		print('{} before activity type: {} \n'.format(before.display_name, before.activity.type))
 		print('{} after activity type: {} \n'.format(after.display_name, after.activity.type))
 def setup(bot):
-	bot.add_Cog(Streamer_role(bot))
+	bot.add_cog(Streamer_role(bot))
