@@ -22,7 +22,12 @@ class Streamer_role(commands.Cog):
 	async def on_member_update(self, before, after):
 		if before.activity != None:
 			print('{} before activity type: {}'.format(before.display_name, str(before.activities)))
+		else:
+			print('{} wasn\'t playing anything.'.format(before.display_name)
 		if after.activity != None:
 			print('{} after activity type: {}\n'.format(after.display_name, after.activity.type.name))
+		else:
+			print('{} has stopped playing.'.format(after.display_name)
+			      
 def setup(bot):
 	bot.add_cog(Streamer_role(bot))
