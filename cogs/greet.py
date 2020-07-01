@@ -18,7 +18,7 @@ class Greetings(commands.Cog):
 		
 	@commands.Cog.listener()
 	async def on_member_join(self, member):
-		welcomeMsg = "Welcome {0.mention}!"
+		#welcomeMsg = "Welcome {0.mention}!"
 		channel = member.guild.system_channel
 		if channel is not None:
 			await channel.send(welcomeMsg.format(member))			
